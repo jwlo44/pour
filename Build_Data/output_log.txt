@@ -2,36 +2,73 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.6909
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   10.18.10.4358
 Begin MonoManager ReloadAssembly
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading H:\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: H:\Desktop\pour\Build_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 50Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.493978 ms
+UnloadTime: 1.563297 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 3594 -> priority: 1 
+  Thread -> id: 3c6c -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.954849 ms
+UnloadTime: 7.848507 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 932.
-Total: 0.402401 ms (FindLiveObjects: 0.049332 ms CreateObjectMapping: 0.037285 ms MarkObjects: 0.308899 ms  DeleteObjects: 0.006023 ms)
+Total: 0.461435 ms (FindLiveObjects: 0.080874 ms CreateObjectMapping: 0.038179 ms MarkObjects: 0.336223 ms  DeleteObjects: 0.005336 ms)
+
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   10.18.10.4358
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\julia\Desktop\pour\Build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.053 seconds
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\julia\Desktop\pour\Build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 50Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.435673 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3294 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.037091 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 932.
+Total: 0.617847 ms (FindLiveObjects: 0.097706 ms CreateObjectMapping: 0.051316 ms MarkObjects: 0.459382 ms  DeleteObjects: 0.008621 ms)
 

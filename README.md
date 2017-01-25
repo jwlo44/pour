@@ -2,6 +2,7 @@
 Julia Wlochowski -
 Game Programming – Simple game.
 https://github.com/jwlo44/pour 
+Video: https://youtu.be/XSzLdzXm0VA
 For my simple game idea I made a 3D game about watering flowers. 
 
 ## How to Play
