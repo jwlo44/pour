@@ -10,11 +10,19 @@ public class FlowerManager : MonoBehaviour {
     public void IncrementFlowerCount()
     {
         flowersLeft++;
-        Debug.Log("Flower added! Total flowers: " + flowersLeft);
+        //Debug.Log("Flower added! Total flowers: " + flowersLeft);
+        if (OnFlowerAdded != null)
+        {
+            OnFlowerAdded(flowersLeft, totalFlowers);
+        }
     }
     public void IncrementTotalFlowers()
     {
         totalFlowers++;
+        if (OnFlowerAdded != null)
+        {
+            OnFlowerAdded(flowersLeft, totalFlowers);
+        }
     }
 
     public delegate void OnWinEvent();
@@ -23,11 +31,13 @@ public class FlowerManager : MonoBehaviour {
     // for when a flower first becomes fully grown
     public delegate void FlowerGrownEvent(int flowersLeft, int totalFlowers);
     public static event FlowerGrownEvent OnFlowerGrown;
+    // for when a new flower is added
+    public static event FlowerGrownEvent OnFlowerAdded;
 
     // handle win fires the win event and does anything else the gm needs to do at that time
     private void HandleWin()
     {
-        Debug.Log("WINNER WINNER WINNER!");
+        //Debug.Log("WINNER WINNER WINNER!");
         if (OnWin != null)
         {
             OnWin();
@@ -42,7 +52,7 @@ public class FlowerManager : MonoBehaviour {
         {
             OnFlowerGrown(flowersLeft, totalFlowers);
         }
-        Debug.Log("Flower grown! Flowers left: " + flowersLeft);
+        //Debug.Log("Flower grown! Flowers left: " + flowersLeft);
         if (flowersLeft <= 0)
         {
             HandleWin();

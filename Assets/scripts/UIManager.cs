@@ -16,19 +16,21 @@ public class UIManager : MonoBehaviour {
         enableOnWin.SetActive(true);
     }
 
-    private void OnFlowerGrown(int flowersLeft, int totalFlowers)
+    private void OnFlowerCountChanged(int flowersLeft, int totalFlowers)
     {
         flowerCountUI.text = string.Format("Flowers Fully Grown: {0}/{1}", totalFlowers - flowersLeft, totalFlowers);
     }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         FlowerManager.OnWin += OnWin;
-        FlowerManager.OnFlowerGrown += OnFlowerGrown;
+        FlowerManager.OnFlowerGrown += OnFlowerCountChanged;
+        FlowerManager.OnFlowerAdded += OnFlowerCountChanged;
 	}
 	void OnDestroy()
     {
         FlowerManager.OnWin -= OnWin;
-        FlowerManager.OnFlowerGrown -= OnFlowerGrown;
+        FlowerManager.OnFlowerGrown -= OnFlowerCountChanged;
+        FlowerManager.OnFlowerAdded -= OnFlowerCountChanged;
     }
 }
