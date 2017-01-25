@@ -7,6 +7,9 @@ public class GrowWhenWatered : MonoBehaviour {
     bool grow = false;
     public Vector3 growthRate = new Vector3(0, .1f, 0);
     public Vector3 maxGrowthScale = new Vector3(1, 1, 1);
+    // turn this on when fully grown
+    [SerializeField]
+    private ParticleSystem particleParty;
 
     [SerializeField]
     private FlowerManager gm;
@@ -65,6 +68,7 @@ public class GrowWhenWatered : MonoBehaviour {
     // called when the flower first reaches its max growth
     private void OnFullyGrown()
     {
+        particleParty.gameObject.SetActive(true);
         gm.HandleFlowerGrown();
     }
     // detects collision with the watering can water
