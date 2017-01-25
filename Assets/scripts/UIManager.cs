@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // enables a gameobject when winning
-public class SceneManager : MonoBehaviour {
+public class UIManager : MonoBehaviour {
 
     [SerializeField]
     private GameObject enableOnWin;
