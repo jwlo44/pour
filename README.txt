@@ -8,6 +8,7 @@ How to Play
 - Space to jump
 - E to water
 - Mouse to look around 
+- Tip: keep watering until you see the flower fully grown count go up! Particles will come out of the flower when it’s done growing.
 Goal
 - Water all the flowers
 Features (rubric)
