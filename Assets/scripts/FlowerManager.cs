@@ -5,19 +5,24 @@ using UnityEngine;
 // FlowerManager counts how many flowers are left
 public class FlowerManager : MonoBehaviour {
 
-    private int flowerCount = 0;
+    private int flowersLeft = 0;
+    private int totalFlowers = 0;
     public void IncrementFlowerCount()
     {
-        flowerCount++;
-        Debug.Log("Flower added! Total flowers: " + flowerCount);
+        flowersLeft++;
+        Debug.Log("Flower added! Total flowers: " + flowersLeft);
+    }
+    public void IncrementTotalFlowers()
+    {
+        totalFlowers++;
     }
 
     public delegate void OnWinEvent();
     public static event OnWinEvent OnWin;
 
     // for when a flower first becomes fully grown
-    public delegate void FlowerGrownEvent(int flowersLeft);
-    public event FlowerGrownEvent OnFlowerGrown;
+    public delegate void FlowerGrownEvent(int flowersLeft, int totalFlowers);
+    public static event FlowerGrownEvent OnFlowerGrown;
 
     // handle win fires the win event and does anything else the gm needs to do at that time
     private void HandleWin()
@@ -32,13 +37,13 @@ public class FlowerManager : MonoBehaviour {
     // HandleFlowerGrown is called when the manager sends a flower growth event
     public void HandleFlowerGrown()
     {
-        flowerCount--;
+        flowersLeft--;
         if (OnFlowerGrown != null)
         {
-            OnFlowerGrown(flowerCount);
+            OnFlowerGrown(flowersLeft, totalFlowers);
         }
-        Debug.Log("Flower grown! Flowers left: " + flowerCount);
-        if (flowerCount <= 0)
+        Debug.Log("Flower grown! Flowers left: " + flowersLeft);
+        if (flowersLeft <= 0)
         {
             HandleWin();
         }

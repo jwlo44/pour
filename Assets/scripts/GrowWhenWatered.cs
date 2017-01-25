@@ -13,6 +13,7 @@ public class GrowWhenWatered : MonoBehaviour {
 
     void Start()
     {
+        gm.IncrementTotalFlowers();
         if (!isFullyGrown())
         {
             gm.IncrementFlowerCount();
