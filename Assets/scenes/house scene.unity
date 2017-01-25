@@ -1618,3 +1618,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f382957748fecb146a20c89bc982088d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableOnWin: {fileID: 27576866}
